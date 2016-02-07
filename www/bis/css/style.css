@@ -1,0 +1,84 @@
+/* Style par défault, en particuler pour mobiles */
+
+html, body {
+	height:100%;
+	margin:0; 
+	font-family: sans-serif;
+	text-align: justify;
+	color: #761630;
+}
+
+a {
+	color: #761630;
+}
+
+img#logo {
+	height: 100%;
+	vertical-align: top;
+}
+
+.hbox {
+	height: 5em;
+	display: inline-block;	
+	vertical-align: bottom;
+}
+
+#title {
+	font-size: 120%;
+	margin-top: 1em;
+	margin-left: 4em;
+	width:12em;
+}
+
+#motto {
+	display: none;
+}
+
+header, footer {
+	display: block; 
+	height: 5em;
+	background-color: #8d1c3a;
+	color: white;
+	overflow:hidden;
+}
+
+article {
+	margin: 1em;
+}
+
+.nav {
+}
+
+.nav li {
+	list-style-type: none;
+}
+
+.nav-section {
+	padding-top: 1ex;
+	font-weight: bold;
+}
+
+.nav-list {
+  display: none;
+  padding: 1em;
+  border-bottom: 1px solid #761630;
+  margin-bottom: 1em;
+}
+
+.nav-item {
+}
+
+.nav-mobile {
+  display:block;
+  cursor:pointer;
+  position:absolute;
+  top:1em;
+  left:1em;
+  background:#34495E url(../img/nav.svg) no-repeat center center;
+  height:3em;
+  width:3em;
+}
+
+.nav-active {
+	display: block;
+}

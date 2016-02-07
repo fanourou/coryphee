@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Studio Coryphée</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen and (min-width: 50em)" />
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="css/enhanced.css" />
+<![endif]-->
+</head>
+<body>
+	<header>
+		<span class="hbox">
+			<span class="hbox" id="title">Accueil</span>
+		</span>
+		<span class="hbox" style="float:right; padding-right: 1em;">
+			<span class="hbox">
+				<div id="motto">
+					Studio Coryphée <br> 
+					<span style="font-size:75%">Petit espace de libre expression à Troyes</span>
+				</div>
+			</span>
+			<span class="hbox">
+   				<img src="img/logo-coryphee.png" id="logo" alt="Studio Coryphée" />
+			</span>
+		</span>
+	</header>
+	<nav class="nav">
+	  <ul class="nav-list">
+	    <li class="nav-item"><a href="#">Accueil</a></li>
+	    <li class="nav-section">Nos ateliers d'expression</li>
+	    <li class="nav-item"><a href="#">Pour jeunes comédiens</a></li>
+	    <li class="nav-item"><a href="#">Ateliers de théatre</a></li>
+    	<li class="nav-item"><a href="#">Ateliers d'écriture</a></li>
+	    <li class="nav-section">Nos ateliers associés</li>
+	    <li class="nav-item"><a href="#">Communication bienveillante</a></li>
+	    <li class="nav-item"><a href="#">Musicothérapie et chant</a></li>
+	    <li class="nav-section">Autres informations</li>	
+	    <li class="nav-item"><a href="#">Notre association</a></li>
+	    <li class="nav-item"><a href="#">Où sommes-nous&nbsp;?</a></li>
+	    <li class="nav-item"><a href="#">Nous contacter</a></li>
+	    <li class="nav-item"><a href="#">Mentions légales</a></li>
+	  </ul>
+	</nav>  
+
+<article>
+
+<div id="intro">
+<table style="margin-left:auto;margin-right:auto;text-align:left">
+	<tr>
+		<td valign="top"><em>S'exprimer</br>Communiquer<br>S'affirmer</em></td>
+		<td align="center"><img src="img/fenetre.png" style="height:10em; padding: 2em"></td>
+		<td valign="bottom"><em>par le théâtre<br>par l'écriture<br>par la musique…</em></td>
+	</tr>
+</table>
+<p>Découvrir son talent propre, non pour y faire carrière 
+mais pour harmoniser sa vie.<br>
+Mieux se connaître et mieux s'exprimer.<br>
+Oser l'imagination en confiance et dans le plaisir du jeu, 
+pour être soi avec les autres, tout simplement.</p>
+
+<p>Bienvenu(e) au Studio Coryphée.</p>
+</div>
+
+
+<p>Studio Coryphée, petit espace de libre expression à Troyes, vous accueille dans ses cours et ses ateliers. </p>
+
+<ul>
+
+    <li>Plaisir du jeu. Dans son <a href="#">Atelier pour jeunes
+comédiens</a>, Isabelle Haumesser, comédienne et pédagogue, propose aux
+enfants de 8 à 12 ans de jouer, de partager, de mieux se connaître, de prendre
+confiance et d'oser utiliser leur imagination pour créer en groupe.</li>
+
+    <li>Travail d'acteur, affirmation de soi, coaching pour la prise de
+parole… <a href="#">Dans son Atelier de Théâtre</a>, Jean-Marie-Gobry- Valle,
+homme de théâtre, invite chacune et chacun à un travail sur soi à partir des
+techniques théâtrales, pour une meilleure maîtrise de son corps, de sa voix,
+de ses émotions. </li>
+
+    <li>Marie-Ange (Armande) Gobry-Valle, écrivain, met son talent et ses
+conseils au service de celles et ceux qui souhaitent s'exprimer par l'écrit.
+Son <a href="#">Atelier d'Écriture</a> est un temps de partage pour développer
+votre imagination et votre capacité d'invention, dans une recherche de
+perfection. </li>
+
+    <li>Pour les parents et pour toute personne qui vit ou travaille avec des
+enfants, les relations sont parfois difficiles. Dans ses séances de <a
+href="#">Communication Bienveillante</a>, selon la méthode Faber et Mazlish,
+l'animatrice Chantal Masson vous aide à découvrir une autre façon de
+communiquer basée sur l'écoute, le respect, la non-violence, la
+bienveillance.</li>
+
+    <li>La musique, langage privilégié de l'affectivité et des émotions. Dans
+ses séances de <a href="#">Musicothérapie et de Chant</a>, Morgane Genneret,
+musicothérapeute et chanteuse, vous invite à vous révéler à vous- même par la
+voix, par le rythme, par le mouvement ou par la découverte des instruments.
+L'aventure commence dès le chant prénatal. Pour les parents, pour les enfants,
+pour tout adulte.</li>
+
+</ul>
+
+</article>
+
+<script>
+		(function () {
+		
+		    // Create mobile element
+		    var mobile = document.createElement('div');
+		    mobile.className = 'nav-mobile';
+		    document.querySelector('.nav').appendChild(mobile);
+		
+		    // hasClass
+		    function hasClass(elem, className) {
+		        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+		    }
+		
+		    // toggleClass
+		    function toggleClass(elem, className) {
+		        var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+		        if (hasClass(elem, className)) {
+		            while (newClass.indexOf(' ' + className + ' ') >= 0) {
+		                newClass = newClass.replace(' ' + className + ' ', ' ');
+		            }
+		            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+		        } else {
+		            elem.className += ' ' + className;
+		        }
+		    }
+		
+		    // Mobile nav function
+		    var mobileNav = document.querySelector('.nav-mobile');
+		    var toggle = document.querySelector('.nav-list');
+		    mobileNav.onclick = function () {
+		        toggleClass(this, 'nav-mobile-open');
+		        toggleClass(toggle, 'nav-active');
+		    };
+		})();
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Modifications pour grands écrans */
+
+#motto {
+	padding-top: 1em;
+	display: block;
+}
+
+#title {
+	width:20em;
+}
+
+article {
+	margin-left: 20em;
+	margin-right: 5em;
+}
+
+#intro {
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.nav {
+	  float: left;
+}
+
+.nav-mobile {
+   display:none;
+}
+
+.nav-list {
+	display: inline-block;
+	border-bottom: 0px solid #761630;
+    margin-bottom: 0em;
+	border-right: 1px solid #761630;
+    width: 15em;
+}
